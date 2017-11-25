@@ -1,0 +1,43 @@
+res7 加入历史统计数据，n_estamater = 50 cv 0.33 online 0.3385
+res8 加入历史统计数据  n_estamater = 100  cv 0.31 online 0.39
+res6 不加历史统计数据  n_estamater = 100
+res5 不加历史统计数据  n_estamater = 50 cv  online 0.37
+res9 加入历史统计数据  llghtGBM  n_estamater = 50 cv 0.37
+res10 train3 xgboost n_estamater = 60 cv 0.35
+res10 现在版本 train4 xgboost n_estamater = 70 cv 0.338 onlie0.38
+res11 train2 离散特征做one-hot n_estamater = 50 colsampling=0.7 cv 0.338 onlie 0.340
+res12 train6 n_estamater = 50 colsampling=0.7 cv 0.332  onlie 0.3358
+
+res12 现在版本 train6 n_estamater = 80 colsampling=0.7 cv 0.3137
+res13 train6 离散特征做one-hot n_estamater = 80 colsampling=0.7  cv 0.3187
+
+
+res8 xgboost 交叉验证的最好boost round=57 online 0.3436
+divide_res1 分开使用xgboost，每个link都进行一次boost round寻优 online 0.3530
+res13 train6 离散特征做one-hot n_estamater = 60 colsampling=0.5  cv 0.3236 online 0.3489
+
+res13 train6 离散特征做one-hot n_estamater = 50 colsampling=0.5  cv 0.337 online 0.3401
+res14 train6 离散特征做one-hot n_estamater = 40 colsampling=0.5  cv 0.379  online 0.3489
+combination_res1 加权平均1 online 0.3364
+
+res10 train7 离散特征做one-hot n_estamater = 50 colsampling=0.9  cv 0.3406 online 0.3406
+res15 train6 去掉nan n_estamater = 50 colsampling=0.9  cv 0.3318 online0.3454
+
+res10  train7 离散特征做one-hot n_estamater = 70 colsampling=0.7  cv 0.31   online 0.3665
+res16 train6 lightGBM n_estamater = 50 num——leaves 256 cv 0.3390 online 0.39
+
+res1 train6 离散特征做one-hot n_estamater = 50 colsampling=0.7  cv 0.3366   online 0.340
+
+res2 train6 n_estamater = 55 colsampling=0.6  cv 0.3236 online 0.34
+res3 train6 n_estamater = 50 colsampling=0.6  cv 0.329 online 0.3385
+
+
+
+
+train1 道路特征 时间特征 道路编码
+train2 道路特征 时间特征 道路编码 历史数据特征
+train3 8-10点的道路特征 时间特征 道路编码
+train4 8-10点的道路特征 时间特征 道路编码 历史数据特征
+train5 train1基础上时间特征加入了weekend和假期
+train6 train2基础上时间特征加入了weekend和假期，历史数据特征扩充
+train67 train6基础上提取6-11点的数据
